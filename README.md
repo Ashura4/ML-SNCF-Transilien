@@ -43,7 +43,7 @@ Construction de 26 features organisées en six familles : temporalité (jour, mo
 **3. Modèles de référence (Baseline)**  
 DummyRegressor (MAPE = 1.000), Ridge (MAPE = 0.814), Lasso (MAPE = 0.814) avec validation croisée temporelle via TimeSeriesSplit.
 
-**4. Modèle non supervisé — K-Means**  
+**4. Modèle non supervisé - K-Means**  
 Clustering des 84 gares sur leurs profils agrégés (21 statistiques par gare). Sélection du nombre optimal de clusters par méthode Elbow et score de silhouette. Le label de cluster est ensuite injecté comme feature dans les modèles supervisés.
 
 **5. Modèles supervisés avancés**  
@@ -52,7 +52,7 @@ Random Forest avec GridSearchCV (MAPE = 0.777) et XGBoost avec RandomizedSearchC
 **6. Interprétabilité**  
 Analyse SHAP (TreeExplainer sur XGBoost) et LIME sur Random Forest pour 3 observations aux profils contrastés. Les deux méthodes convergent vers les mêmes drivers : `p0q2`, `p0q3` et `cluster_gare` dominent les contributions.
 
-**7. Deep Learning — MLP**  
+**7. Deep Learning - MLP**  
 Réseau dense 128→64→32→1 avec Batch Normalization, Dropout 20%, optimiseur Adam et Early Stopping (patience = 15). Entraîné sur 100 epochs sur GPU T4 (Google Colab).
 
 ---

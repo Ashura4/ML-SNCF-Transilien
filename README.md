@@ -1,11 +1,11 @@
 # ML-SNCF-Transilien
 Projet ML M2 IEF Dauphine 2025/2026 - Prévision en temps réel du temps d'attente au quai sur le réseau SNCF-Transilien à partir de données capteurs | Challenge Data ENS #166
-# Prévision du temps d'attente au quai — SNCF Transilien
+# Prévision du temps d'attente au quai - SNCF Transilien
 
 Projet Machine Learning réalisé dans le cadre du Master 2 IEF 2025/2026 à l'Université Paris Dauphine PSL.
 
 **Auteurs :** Gopi VENOU & Rémi Schmitt  
-**Enseignant :** Sylvain Benoît  
+**Enseignant :** Arthur Thomas  
 **Date de rendu :** 17 avril 2026  
 
 ---
